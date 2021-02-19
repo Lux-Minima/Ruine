@@ -1,2 +1,2 @@
-# Ruine
+# RUIN
 Clicker by chintoxique
