@@ -1,11 +1,39 @@
 <template>
-  <main>
-    <header class="bg-white shadow" v-if="$route.meta.title">
-      <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold leading-tight text-gray-900">{{ $route.meta.title }}</h1>
-      </div>
-    </header>
+  <div class="" id="app">
+
+    <!-- HEADER -->
 
     <router-view />
-  </main>
+
+    <!-- FOOTER -->
+
+  </div>
 </template>
+
+
+
+
+<style lang="scss">
+* {
+  cursor: crosshair;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+body::-webkit-scrollbar-track {
+  background: black;
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: white;
+}
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+html {
+  scrollbar-color: white black;
+  scrollbar-width: thin;
+}
+</style>
