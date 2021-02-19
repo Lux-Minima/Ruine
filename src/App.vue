@@ -1,17 +1,12 @@
 <template>
-  <div class="" id="app">
-
+  <div class="bg-gray-300" id="app">
     <!-- HEADER -->
 
     <router-view />
 
     <!-- FOOTER -->
-
   </div>
 </template>
-
-
-
 
 <style lang="scss">
 * {
