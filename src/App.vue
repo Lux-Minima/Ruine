@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-shi-gray-200 dark:bg-black"  id="app">
+  <div class="bg-shi-gray-200 dark:bg-black" id="app">
     <!-- HEADER -->
 
     <router-view />
