@@ -3,19 +3,19 @@
     class="text-red-900 relative text-center pt-8 container max-w-xs mx-auto"
   >
     <div class="h-screen">
-      <svg v-if='theme == "light"' @click="themeDark()"  class="h-6 w-6 text-black absolute top-0 right-0 m-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <svg v-if='theme == "light"' @click="themeDark()"  class="h-6 w-6 text-white absolute top-0 right-0 martop mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
       </svg>
-      <svg v-if='theme == "dark"' @click="themeLight()"  class="h-6 w-6 text-white absolute top-0 right-0 m-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <svg v-if='theme == "dark"' @click="themeLight()"  class="h-6 w-6 text-black absolute top-0 right-0 martop mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
       </svg>
       <div class="h-3"></div>
-      <span class="relative px-4 py-2 rounded-none bg-black text-white font-bold font-mono mx-auto">
+      <p class=" px-4 py-2 rounded-none bg-black dark:bg-white text-white dark:text-black font-bold font-sans mx-auto">
         {{ mot }}
-      </span>
-      <img class="mx-auto absolute"  :src="image" alt="ruin" />
+      </p>
+      <img class="mx-auto absolute top-0 mt-20"  :src="image" alt="ruin" />
       <button
-        class="clicker h-12 w-12 relative focus:outline-none border-b-4 border-red-900 dark:border-shamrock-600 rounded-none bg-black text-white font-bold font-mono"
+        class="clicker h-12 w-12 relative focus:outline-none border-b-4 border-red-900 dark:border-shamrock-500 rounded-none bg-black dark:bg-white text-white dark:text-black font-bold font-mono"
         type="button"
         @click="tick(1)"
       >
@@ -93,7 +93,7 @@ export default {
     var music4  = new Audio(require('../assets/music/Igorrr-Probleme-d-emotion.mp3' ));
     var music5  = new Audio(require('../assets/music/Little-Nightmares-Lure-Of-The-Maw.mp3' ));
     var music6  = new Audio(require('../assets/music/Little-Nightmares-Prison-Toys.mp3' ));
-    var music7  = new Audio(require('../assets/music/Metropolis-Soundtrack-04_Going To ''Zone''.mp3' ));
+    var music7  = new Audio(require('../assets/music/Metropolis-Soundtrack-04_Going_To_Zone.mp3' ));
     var music8  = new Audio(require('../assets/music/Metropolis-soundtrack-17_Awakening.mp3' ));
     var music9  = new Audio(require('../assets/music/Chilly-Gonzales-Minor-Fantasy.mp3' ));
     var music10 = new Audio(require('../assets/music/Ergo-Proxy-soundtrack-11-Wasteland-Nostalgia.mp3'));
@@ -323,6 +323,9 @@ export default {
 </script>
 
 <style lang="css">
+.martop {
+  margin-top: 3.25rem;
+}
 .clicker {
   margin-top: 413px;
   -webkit-user-select: none;
