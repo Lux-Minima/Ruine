@@ -1,6 +1,6 @@
 module.exports = {
   pwa: {
-    themeColor: '#000000',
-    name: 'RUIN'
+    themeColor: "#000000",
+    name: "RUIN"
   }
-}
+};
