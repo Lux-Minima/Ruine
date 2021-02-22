@@ -226,94 +226,132 @@ export default {
     tick(x) {
       if (this.count < 77) {
         this.image = this.ville1.src;
-        this.music1.currentTime = 0
-        this.music1.loop = true
-        this.music1.volume = 0.8
-        this.music1.play()
+        if (this.count == 1) {
+          this.music1.currentTime = 0
+          this.music1.loop = true
+          this.music1.volume = 0.8
+          this.music1.play()
+        }
       } else if (this.count < 154) {
         this.image = this.ville2.src;
-        this.music1.pause()
-        this.music2.currentTime = 0
-        this.music2.loop = true
-        this.music2.volume = 0.8
-        this.music2.play()
+        if (this.count == 77) {
+          this.music1.pause()
+          this.music2.currentTime = 0
+          this.music2.loop = true
+          this.music2.volume = 0.8
+          this.music2.play()
+        }
+
       } else if (this.count < 231) {
         this.image = this.ville3.src;
-        this.music2.pause()
-        this.music3.currentTime = 0
-        this.music3.loop = true
-        this.music3.volume = 0.8
-        this.music3.play()
+        if (this.count == 154) {
+          this.music2.pause()
+          this.music3.currentTime = 0
+          this.music3.loop = true
+          this.music3.volume = 0.8
+          this.music3.play()
+        }
+
       } else if (this.count < 308) {
         this.image = this.ville4.src;
-        this.music3.pause()
-        this.music4.currentTime = 0
-        this.music4.loop = true
-        this.music4.volume = 0.8
-        this.music4.play()
+        if (this.count == 231) {
+          this.music3.pause()
+          this.music4.currentTime = 0
+          this.music4.loop = true
+          this.music4.volume = 0.8
+          this.music4.play()
+        }
+
       } else if (this.count < 385 ) {
         this.image = this.ville5.src;
-        this.music4.pause()
-        this.music5.currentTime = 0
-        this.music5.loop = true
-        this.music5.volume = 0.8
-        this.music5.play()
+        if (this.count == 308) {
+          this.music4.pause()
+          this.music5.currentTime = 0
+          this.music5.loop = true
+          this.music5.volume = 0.8
+          this.music5.play()
+        }
+
       } else if (this.count < 462) {
         this.image = this.ville6.src
-        this.music5.pause()
-        this.music6.currentTime = 0
-        this.music6.loop = true
-        this.music6.volume = 0.8
-        this.music6.play()
+        if (this.count == 385) {
+          this.music5.pause()
+          this.music6.currentTime = 0
+          this.music6.loop = true
+          this.music6.volume = 0.8
+          this.music6.play()
+        }
+
       } else if (this.count < 539) {
         this.image = this.ville7.src
-        this.music6.pause()
-        this.music7.currentTime = 0
-        this.music7.loop = true
-        this.music7.volume = 0.8
-        this.music7.play()
+        if (this.count == 462) {
+          this.music6.pause()
+          this.music7.currentTime = 0
+          this.music7.loop = true
+          this.music7.volume = 0.8
+          this.music7.play()
+        }
+
       } else if (this.count < 616) {
         this.image = this.ville8.src
-        this.music7.pause()
-        this.music8.currentTime = 0
-        this.music8.loop = true
-        this.music8.volume = 0.8
-        this.music8.play()
+        if (this.count == 539) {
+          this.music7.pause()
+          this.music8.currentTime = 0
+          this.music8.loop = true
+          this.music8.volume = 0.8
+          this.music8.play()
+        }
+
       } else if (this.count < 693) {
         this.image = this.ville9.src
-        this.music8.pause()
-        this.music9.currentTime = 0
-        this.music9.loop = true
-        this.music9.volume = 0.8
-        this.music9.play()
+        if (this.count == 616) {
+          this.music8.pause()
+          this.music9.currentTime = 0
+          this.music9.loop = true
+          this.music9.volume = 0.8
+          this.music9.play()
+        }
+
       } else if (this.count < 770) {
         this.image = this.ville10.src
-        this.music9.pause()
-        this.music10.currentTime = 0
-        this.music10.loop = true
-        this.music10.volume = 0.8
-        this.music10.play()
+        if (this.count == 693) {
+          this.music9.pause()
+          this.music10.currentTime = 0
+          this.music10.loop = true
+          this.music10.volume = 0.8
+          this.music10.play()
+        }
+
       } else if (this.count < 847) {
         this.image = this.ville11.src
-        this.music10.pause()
-        this.music11.currentTime = 0
-        this.music11.loop = true
-        this.music11.volume = 0.8
-        this.music11.play()
+        if (this.count == 770) {
+          this.music10.pause()
+          this.music11.currentTime = 0
+          this.music11.loop = true
+          this.music11.volume = 0.8
+          this.music11.play()
+        }
+
       } else if (this.count < 924) {
         this.image = this.ville12.src
-        this.music11.pause()
-        this.music12.currentTime = 0
-        this.music12.loop = true
-        this.music12.volume = 0.8
-        this.music12.play()
+        if (this.count == 847) {
+          this.music11.pause()
+          this.music12.currentTime = 0
+          this.music12.loop = true
+          this.music12.volume = 0.8
+          this.music12.play()
+        }
+
       } else if (this.count < 1001) {
         this.image = this.ville13.src
-        this.music12.pause()
-        this.music13.currentTime = 0
-        this.music13.loop = true
-        this.music13.volume = 0.8
-        this.music13.play()
+        if (this.count == 924) {
+          this.music12.pause()
+          this.music13.currentTime = 0
+          this.music13.loop = true
+          this.music13.volume = 0.8
+          this.music13.play()
+        }
+
       }
       this.count += x;
       this.mot = this.motList[this.getRandomInt(this.motList.length)]
