@@ -3,6 +3,16 @@
     class="text-red-900 relative text-center pt-8 container max-w-xs mx-auto"
   >
     <div class="h-screen">
+      <svg v-if='theme == "light"' @click="themeDark()"  class="h-6 w-6 text-black absolute top-0 right-0 m-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+      </svg>
+      <svg v-if='theme == "dark"' @click="themeLight()"  class="h-6 w-6 text-white absolute top-0 right-0 m-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+      </svg>
+      <div class="h-3"></div>
+      <span class="relative px-4 py-2 rounded-none bg-black text-white font-bold font-mono mx-auto">
+        {{ mot }}
+      </span>
       <img class="mx-auto absolute"  :src="image" alt="ruin" />
       <button
         class="clicker h-12 w-12 relative focus:outline-none border-b-4 border-red-900 dark:border-shamrock-600 rounded-none bg-black text-white font-bold font-mono"
@@ -12,26 +22,22 @@
         {{ count }}
       </button>
       <br>
-      <div class="h-8"></div>
-      <span class="border-b-4 border-red-900 dark:border-shamrock-600 relative px-4 py-2 rounded-none bg-black text-white font-bold font-mono mx-auto">
-        {{ mot }}
-      </span>
     </div>
     <div class="">
       <h1>Music's: </h1>
-      <p>77</p>
-      <p>154</p>
-      <p>231</p>
-      <p>308</p>
-      <p>385</p>
-      <p>462</p>
-      <p>539</p>
-      <p>616</p>
-      <p>693</p>
-      <p>770</p>
-      <p>847</p>
-      <p>924</p>
-      <p>1001</p>
+      <p><span class="font-bold">77  </span> :  </p>
+      <p><span class="font-bold">154 </span> :  </p>
+      <p><span class="font-bold">231 </span> :  </p>
+      <p><span class="font-bold">308 </span> :  </p>
+      <p><span class="font-bold">385 </span> :  </p>
+      <p><span class="font-bold">462 </span> :  </p>
+      <p><span class="font-bold">539 </span> :  </p>
+      <p><span class="font-bold">616 </span> :  </p>
+      <p><span class="font-bold">693 </span> :  </p>
+      <p><span class="font-bold">770 </span> :  </p>
+      <p><span class="font-bold">847 </span> :  </p>
+      <p><span class="font-bold">924 </span> :  </p>
+      <p><span class="font-bold">1001</span> :  </p>
     </div>
   </div>
 </template>
@@ -153,13 +159,34 @@ export default {
       mot: "Ruin",
       // Active image
       image: "",
+      theme: "",
     }
   },
   mounted() {
     // this.tick(1)
     this.image = this.ville1.src
+
+    //theme setup
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+      this.theme = "dark"
+    } else {
+      document.documentElement.classList.remove('dark')
+      this.theme = "light"
+    }
   },
   methods : { //THIS.BIATCCCCHH
+    // Theme action
+    themeLight() {
+      document.documentElement.classList.remove('dark')
+      localStorage.theme = 'light'
+      this.theme = "light"
+    },
+    themeDark() {
+      document.documentElement.classList.add('dark')
+      localStorage.theme = 'dark'
+      this.theme = "dark"
+    },
     // Generate a rand number
     getRandomInt(max) {
       return Math.floor(Math.random() * Math.floor(max));
