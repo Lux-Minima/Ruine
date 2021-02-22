@@ -264,6 +264,37 @@ export default {
         "Objet en-soi",
         "Être",
         "Être pour autrui"
+        "ειρήνη",
+        "Environnement",
+        "ελευθερία",
+        "θάνατος",
+        "ματωμένα",
+        "ανησυχία",
+        "επανάσταση ",
+        "αναζωογόνηση",
+        "καπνός",
+        "μητέρα φύση",
+        "ελευθερία ή θάνατος",
+        "Menschen",
+        "Angst",
+        "Gift",
+        "나무",
+        "비",
+        "살다",
+        "觉得",
+        "弱",
+        "平静",
+        "秘密",
+        "错",
+        "Cauchemar",
+        "Esperanzia",
+        "Espoir",
+        "Désespoir",
+        "Vivace",
+        "Affamé",
+      
+
+
       ],
       // Active word
       mot: "Ruin",
@@ -402,7 +433,7 @@ export default {
           this.music10.pause();
           this.music11.currentTime = 0;
           this.music11.loop = true;
-          this.music11.volume = 0.8;
+          this.music11.volume = 0.6;
           this.music11.play();
         }
       } else if (this.count < 924) {
