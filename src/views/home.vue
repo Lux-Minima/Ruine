@@ -44,20 +44,56 @@
       <br />
     </div>
     <div class="">
-      <h1>Music's: </h1>
-      <p><span class="font-bold">77 : 14-Hunger-II  </span> :  </p>
-      <p><span class="font-bold">154 : Little-Nightmares-Lure-Of-The-Maw</span> :  </p>
-      <p><span class="font-bold">231 : Fly me to the Moon - MidnightVersion </span> :  </p>
-      <p><span class="font-bold">308 : Minor Fantasy - C.G </span> :  </p>
-      <p><span class="font-bold">385 : Problème d'émotion </span> :  </p>
-      <p><span class="font-bold">462 : Wasteland Nostalgia- Ergo Proxy Soundtrack 11 </span> :  </p>
-      <p><span class="font-bold">539 : Making of Cyborg - Ghost in the Shell Soundtrack </span> :  </p>
-      <p><span class="font-bold">616 : Prison Toys - Little Nightmares</span> :  </p>
-      <p><span class="font-bold">693 : Ib game music medley-20120610-by-YASUpochi</span> :  </p>
-      <p><span class="font-bold">770 : Waltz-With-Bashir-OST-04-JSB-RPG</span> :  </p>
-      <p><span class="font-bold">847 : 04 Going_To_Zone - Metropolis 2001 Soudtracks</span> :  </p>
-      <p><span class="font-bold">924 : Gloomy-Sunday</span> :  </p>
-      <p><span class="font-bold">1001 : Kumo To Rouba To Shoujo - Jigoku Shojo</span> :  </p>
+      <h1>Music's:</h1>
+      <p><span class="font-bold">77 : 14-Hunger-II </span> :</p>
+      <p>
+        <span class="font-bold">154 : Little-Nightmares-Lure-Of-The-Maw</span> :
+      </p>
+      <p>
+        <span class="font-bold"
+          >231 : Fly me to the Moon - MidnightVersion
+        </span>
+        :
+      </p>
+      <p><span class="font-bold">308 : Minor Fantasy - C.G </span> :</p>
+      <p><span class="font-bold">385 : Problème d'émotion </span> :</p>
+      <p>
+        <span class="font-bold"
+          >462 : Wasteland Nostalgia- Ergo Proxy Soundtrack 11
+        </span>
+        :
+      </p>
+      <p>
+        <span class="font-bold"
+          >539 : Making of Cyborg - Ghost in the Shell Soundtrack
+        </span>
+        :
+      </p>
+      <p>
+        <span class="font-bold">616 : Prison Toys - Little Nightmares</span> :
+      </p>
+      <p>
+        <span class="font-bold"
+          >693 : Ib game music medley-20120610-by-YASUpochi</span
+        >
+        :
+      </p>
+      <p>
+        <span class="font-bold">770 : Waltz-With-Bashir-OST-04-JSB-RPG</span> :
+      </p>
+      <p>
+        <span class="font-bold"
+          >847 : 04 Going_To_Zone - Metropolis 2001 Soudtracks</span
+        >
+        :
+      </p>
+      <p><span class="font-bold">924 : Gloomy-Sunday</span> :</p>
+      <p>
+        <span class="font-bold"
+          >1001 : Kumo To Rouba To Shoujo - Jigoku Shojo</span
+        >
+        :
+      </p>
     </div>
   </div>
 </template>
@@ -107,20 +143,43 @@ export default {
     ville13.src = require("../assets/13_pluie.gif");
 
     // Loading music
-    var music1  = new Audio(require('../assets/music/14-Hunger-II.mp3' ));
-    var music2  = new Audio(require('../assets/music/Little-Nightmares-Lure-Of-The-Maw.mp3'));
-    var music3  = new Audio(require('../assets/music/Fly-me-to-the-Moon-Midnight-Version.mp3'));
-    var music4  = new Audio(require('../assets/music/Chilly-Gonzales-Minor-Fantasy.mp3' ));
-    var music5  = new Audio(require('../assets/music/Igorrr-Probleme-d-emotion.mp3' ));
-    var music6  = new Audio(require('../assets/music/Ergo-Proxy-soundtrack-11-Wasteland-Nostalgia.mp3' ));
-    var music7  = new Audio(require('../assets/music/Ghost-in-the-Shell-Soundtrack-Making-of-Cyborg.mp3' ));
-    var music8  = new Audio(require('../assets/music/Little-Nightmares-Prison-Toys.mp3' ));
-    var music9  = new Audio(require('../assets/music/Ib-game-music-medley-20120610-by-YASUpochi.mp3' ));
-    var music10 = new Audio(require('../assets/music/Waltz-With-Bashir-OST-04-JSB-RPG.mp3'));
-    var music11 = new Audio(require('../assets/music/Metropolis-Soundtrack-04_Going_To_Zone.mp3'));
-    var music12 = new Audio(require('../assets/music/Gloomy-Sunday-Billie-Holiday.mp3'));
-    var music13 = new Audio(require('../assets/music/Jigoku-Shoujo-Ost-Kumo-To-Rouba-To-Shoujo.mp3'));
-
+    var music1 = new Audio(require("../assets/music/14-Hunger-II.mp3"));
+    var music2 = new Audio(
+      require("../assets/music/Little-Nightmares-Lure-Of-The-Maw.mp3")
+    );
+    var music3 = new Audio(
+      require("../assets/music/Fly-me-to-the-Moon-Midnight-Version.mp3")
+    );
+    var music4 = new Audio(
+      require("../assets/music/Chilly-Gonzales-Minor-Fantasy.mp3")
+    );
+    var music5 = new Audio(
+      require("../assets/music/Igorrr-Probleme-d-emotion.mp3")
+    );
+    var music6 = new Audio(
+      require("../assets/music/Ergo-Proxy-soundtrack-11-Wasteland-Nostalgia.mp3")
+    );
+    var music7 = new Audio(
+      require("../assets/music/Ghost-in-the-Shell-Soundtrack-Making-of-Cyborg.mp3")
+    );
+    var music8 = new Audio(
+      require("../assets/music/Little-Nightmares-Prison-Toys.mp3")
+    );
+    var music9 = new Audio(
+      require("../assets/music/Ib-game-music-medley-20120610-by-YASUpochi.mp3")
+    );
+    var music10 = new Audio(
+      require("../assets/music/Waltz-With-Bashir-OST-04-JSB-RPG.mp3")
+    );
+    var music11 = new Audio(
+      require("../assets/music/Metropolis-Soundtrack-04_Going_To_Zone.mp3")
+    );
+    var music12 = new Audio(
+      require("../assets/music/Gloomy-Sunday-Billie-Holiday.mp3")
+    );
+    var music13 = new Audio(
+      require("../assets/music/Jigoku-Shoujo-Ost-Kumo-To-Rouba-To-Shoujo.mp3")
+    );
 
     return {
       // Register images
