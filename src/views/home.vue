@@ -37,7 +37,7 @@
       <button
         class="clicker h-12 w-12 relative focus:outline-none border-b-4 border-red-900 dark:border-shamrock-500 rounded-none bg-black dark:bg-white text-white dark:text-black font-bold font-mono"
         type="button"
-        @click="tick(1)"
+        @click="tick(7)"
       >
         {{ count }}
       </button>
@@ -292,7 +292,24 @@ export default {
         "Désespoir",
         "Vivace",
         "Affamé",
-      
+        "Trümmer ",
+        "Zerstörung ",
+        "Erwachen ",
+        "Zweifel",
+        "Verzweiflung",
+        "Trostlosigkeit",
+        "Träumen",
+        "Melancholy",
+        "Nostalgia",
+        "Home",
+        "Homeless",
+        "Sweet Home",
+        "Trying",
+        "Désolation",
+        "Dévasté",
+        "Reconstruire",
+        "Bâtir",
+
 
 
       ],
