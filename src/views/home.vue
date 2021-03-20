@@ -381,7 +381,7 @@ export default {
     tick(x) {
       if (this.count < 77) {
         this.image = this.ville1.src;
-        if (this.count == 1) {
+        if (this.count == 7) {
           this.music1.currentTime = 0;
           this.music1.loop = true;
           this.music1.volume = 0.8;
