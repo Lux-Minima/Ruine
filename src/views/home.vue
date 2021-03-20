@@ -44,61 +44,71 @@
       <br />
     </div>
     <div class="">
-      <h1>Music's:</h1>
-      <p><span class="font-bold">77 : 14-Hunger-II </span> :</p>
+      <h1>Soundtracks:</h1>
+      <p><span class="font-bold">77 : 14-Hunger-II </span></p>
       <p>
-        <span class="font-bold">154 : Little-Nightmares-Lure-Of-The-Maw</span> :
+        <span class="font-bold">154 : Little-Nightmares-Lure-Of-The-Maw</span>
       </p>
       <p>
         <span class="font-bold"
           >231 : Fly me to the Moon - MidnightVersion
         </span>
-        :
+
       </p>
-      <p><span class="font-bold">308 : Minor Fantasy - C.G </span> :</p>
-      <p><span class="font-bold">385 : Problème d'émotion </span> :</p>
+      <p><span class="font-bold">308 : Minor Fantasy - C.G </span></p>
+      <p><span class="font-bold">385 : Problème d'émotion </span></p>
       <p>
         <span class="font-bold"
           >462 : Wasteland Nostalgia- Ergo Proxy Soundtrack 11
         </span>
-        :
+
       </p>
       <p>
         <span class="font-bold"
           >539 : Making of Cyborg - Ghost in the Shell Soundtrack
         </span>
-        :
+
       </p>
       <p>
-        <span class="font-bold">616 : Prison Toys - Little Nightmares</span> :
+        <span class="font-bold">616 : Prison Toys - Little Nightmares</span>
       </p>
       <p>
         <span class="font-bold"
           >693 : Ib game music medley-20120610-by-YASUpochi</span
         >
-        :
+
       </p>
       <p>
-        <span class="font-bold">770 : Waltz-With-Bashir-OST-04-JSB-RPG</span> :
+        <span class="font-bold">770 : Waltz-With-Bashir-OST-04-JSB-RPG</span>
       </p>
       <p>
         <span class="font-bold"
-          >847 : 04 Going_To_Zone - Metropolis 2001 Soudtracks</span
+          >847 : 04 Going_To_Zone - Metropolis 2001 Soundtracks</span
         >
-        :
+
       </p>
-      <p><span class="font-bold">924 : Gloomy-Sunday</span> :</p>
+      <p><span class="font-bold">924 : Gloomy-Sunday</span> </p>
       <p>
         <span class="font-bold"
           >1001 : Kumo To Rouba To Shoujo - Jigoku Shojo</span
         >
-        :
+
       </p>
+    </div>
+    <br>
+    <div class="text-sm font-bold mt-24 pb-6">
+      (Support our games & projects development with a donation !)
+    </div>
+    <div class="relative w-full h-32 ml-28 pb-10">
+      <a class="cursor-pointer w-full block absolute z-50" style="width:80px;height:80px" target="_blank" href="https://www.paypal.com/paypalme/atelier404"></a>
+      <qrcode-vue class="absolute" background="rgba(0,0,0,0)" :foreground="qrcolor" renderAs="svg" :value="value" :size="size" level="H" />
     </div>
   </div>
 </template>
 
 <script>
+import QrcodeVue from 'qrcode.vue'
+
 export default {
   name: "clicker",
   data() {
@@ -263,7 +273,7 @@ export default {
         "Transcendance de l'ego",
         "Objet en-soi",
         "Être",
-        "Être pour autrui"
+        "Être pour autrui",
         "ειρήνη",
         "Environnement",
         "ελευθερία",
@@ -317,8 +327,14 @@ export default {
       mot: "Ruin",
       // Active image
       image: "",
-      theme: ""
+      theme: "",
+      value: 'https://www.paypal.com/paypalme/atelier404',
+      size: 80,
+      qrcolor: "white"
     };
+  },
+  components: {
+      QrcodeVue,
   },
   mounted() {
     // this.tick(1)
@@ -332,9 +348,11 @@ export default {
     ) {
       document.documentElement.classList.add("dark");
       this.theme = "dark";
+      this.qrcolor = "white";
     } else {
       document.documentElement.classList.remove("dark");
       this.theme = "light";
+      this.qrcolor = "black";
     }
   },
   methods: {
@@ -344,11 +362,13 @@ export default {
       document.documentElement.classList.remove("dark");
       localStorage.theme = "light";
       this.theme = "light";
+      this.qrcolor = "black";
     },
     themeDark() {
       document.documentElement.classList.add("dark");
       localStorage.theme = "dark";
       this.theme = "dark";
+      this.qrcolor = "white";
     },
     // Generate a rand number
     getRandomInt(max) {
