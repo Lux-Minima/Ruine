@@ -10,7 +10,7 @@
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9.8.6",
-    "core-js": "^3.8.3",
+    "core-js": "^3.9.1",
     "postcss": "^7.0.35",
     "postcss-import": "^14.0.0",
     "qrcode.vue": "^1.7.0",
