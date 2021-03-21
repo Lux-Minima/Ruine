@@ -93,7 +93,7 @@
     <div class="text-sm font-bold mt-24 pb-6">
       (Support our games & projects development with a donation !)
     </div>
-    <div class="relative w-full h-32 ml-28 pb-10">
+    <div class="relative w-full h-32 pl-28 pb-10">
       <a
         class="cursor-pointer w-full block absolute z-50"
         style="width:80px;height:80px"
